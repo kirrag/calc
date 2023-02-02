@@ -14,7 +14,7 @@ public class Calculator {
 		try {
 			return x / y;
 		} catch (ArithmeticException  e) {
-			throw new RuntimeException(e);
+			throw new RuntimeException("Error: " + e);
 		}
 	};
 	
