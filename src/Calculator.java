@@ -13,13 +13,11 @@ public class Calculator {
 	BinaryOperator<Integer> devide = (x, y) -> {
 		try {
 			return x / y;
-		} catch (Exception e) {
+		} catch (ArithmeticException  e) {
 			throw new RuntimeException(e);
 		}
 	};
 	
-
-	//BinaryOperator<Integer> devide = (x, y) -> x / y;
 	UnaryOperator<Integer> pow = x -> x * x;
 	UnaryOperator<Integer> abs = x -> x > 0 ? x: x * -1;
 
